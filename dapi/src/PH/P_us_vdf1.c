@@ -904,7 +904,7 @@ short                   wendy[SPDEF] =
 	22,								   /* SR (height of max stress-rise impulse of f0 in Hz) */
 	0,                                 /* GS (glottal speed) */
 #ifndef i386
-	6,								   /* Output gain multiplier  */
+	-3,								   /* Output gain multiplier  */
 #endif
    /* WENDY */
 };
@@ -1296,7 +1296,7 @@ short                   wendy[SPDEF] =
 	22+10,								   /* SR (height of max stress-rise impulse of f0 in Hz) */
 	0,                                 /* GS (glottal speed) */
 #ifndef i386
-	6,								   /* Output gain multiplier  */
+	-3,								   /* Output gain multiplier  */
 #endif
    /* noaWENDY */
 };
