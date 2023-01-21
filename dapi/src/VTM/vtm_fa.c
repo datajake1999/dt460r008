@@ -1317,7 +1317,8 @@ void read_speaker_definition(LPTTS_HANDLE_T phTTS)
   /*  Apply arbitrary scale factor of 0.125 to all Speaker gains.     */
   /********************************************************************/
 
-  avg = pSpeakerDefinition->azgain;     /*  21                        */
+  avg = pSpeakerDefinition->azgain-2;     /*  21                        */
+  if (avg<0) avg=0;
   pVtm_t->SpeakerVoicingGain = 16.0 * dBtoLinear[avg];
 
   /********************************************************************/
